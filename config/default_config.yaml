@@ -1,0 +1,83 @@
+app:
+  name: 小说整理系统
+  version: 1.0.0
+  author: AI Assistant
+paths:
+  work_dir: 小说库
+  backup_dir: backup
+  logs_dir: logs
+thresholds:
+  direct_classification: 16
+  secondary_check: 8
+  score_difference: 4
+weights:
+  high: 3
+  medium: 2
+  low: 1
+processing:
+  batch_size: 100
+  max_preview_chars: 10000
+  create_backup: false
+  auto_fix_encoding: true
+  text_extraction:
+    begin_chars: 3000
+    random_fragment_count: 3
+    random_fragment_size: 500
+encoding:
+  target_encoding: utf-8
+  min_confidence: 0.7
+  supported_encodings:
+    - utf-8           # UTF-8标准编码
+    - utf-8-sig       # UTF-8 with BOM
+    - gbk             # 简体中文GBK
+    - gb2312          # 简体中文GB2312
+    - gb18030         # 简体中文GB18030(全字符集)
+    - big5            # 繁体中文Big5
+    - big5-hkscs      # 香港Big5扩展
+    - cp936           # Windows简体中文代码页(同GBK)
+    - cp950           # Windows繁体中文代码页(同Big5)
+    - utf-16          # UTF-16
+    - utf-16le        # UTF-16 Little Endian
+    - utf-16be        # UTF-16 Big Endian
+    - utf-32          # UTF-32
+    - utf-32le        # UTF-32 Little Endian
+    - utf-32be        # UTF-32 Big Endian
+    - latin1          # Latin-1 (ISO-8859-1)
+    - cp1252          # Windows Western European
+    - ascii           # ASCII
+  detection_encodings:
+    - gbk             # 简体中文GBK
+    - gb2312          # 简体中文GB2312
+    - gb18030         # 简体中文GB18030
+    - big5            # 繁体中文Big5
+    - big5-hkscs      # 香港Big5扩展
+    - cp936           # Windows简体中文代码页
+    - cp950           # Windows繁体中文代码页
+    - utf-8-sig       # UTF-8 with BOM
+    - utf-16          # UTF-16
+    - utf-16le        # UTF-16 Little Endian
+    - utf-16be        # UTF-16 Big Endian
+    - utf-32          # UTF-32
+    - utf-32le        # UTF-32 Little Endian
+    - utf-32be        # UTF-32 Big Endian
+    - cp1252          # Windows Western European
+    - latin1          # Latin-1
+  validation_encodings:
+    - utf-8           # UTF-8标准编码
+    - utf-8-sig       # UTF-8 with BOM
+    - gbk             # 简体中文GBK
+    - gb2312          # 简体中文GB2312
+    - gb18030         # 简体中文GB18030(全字符集)
+    - big5            # 繁体中文Big5
+    - big5-hkscs      # 香港Big5扩展
+    - cp936           # Windows简体中文代码页
+    - cp950           # Windows繁体中文代码页
+    - utf-16          # UTF-16
+    - utf-16le        # UTF-16 Little Endian
+    - utf-16be        # UTF-16 Big Endian
+    - utf-32          # UTF-32
+    - utf-32le        # UTF-32 Little Endian
+    - utf-32be        # UTF-32 Big Endian
+    - latin1          # Latin-1 (ISO-8859-1)
+    - cp1252          # Windows Western European
+    - ascii           # ASCII

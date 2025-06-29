@@ -1,0 +1,23 @@
+window:
+  title: 小说整理系统 v1.0
+  width: 1000
+  height: 800
+  min_width: 800
+  min_height: 700
+  resizable: true
+theme:
+  font_family: 微软雅黑
+  font_size: 9
+  bg_color: '#f0f0f0'
+  fg_color: '#333333'
+  accent_color: '#0078d4'
+layout:
+  panel_spacing: 10
+  button_height: 30
+  progress_height: 20
+  log_lines: 15
+behavior:
+  auto_save_logs: true
+  confirm_operations: true
+  show_progress: true
+  remember_window_state: true

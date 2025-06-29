@@ -1,0 +1,33 @@
+# 小说库目录 - 包含大量用户文件，不应纳入版本控制
+小说库/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+temp/
+*.tmp
+
+# 备份文件
+backup/
+*.bak
+
+# 统计文件
+statistics/
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 分析文件
+analysis/
