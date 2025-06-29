@@ -1,4 +1,4 @@
-16#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 小说分类系统GUI - 主程序入口
